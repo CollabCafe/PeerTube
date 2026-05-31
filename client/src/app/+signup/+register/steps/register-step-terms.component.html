@@ -2,7 +2,7 @@
 
   @if (requiresApproval()) {
     <div class="form-group">
-      <label i18n for="registrationReason">Why do you want to join {{ instanceName() }}?</label>
+      <label i18n for="registrationReason">Why would you like an account on {{ instanceName() }}?</label>
       <textarea
         id="registrationReason" formControlName="registrationReason" class="form-control" rows="4"
         [ngClass]="{ 'input-error': formErrors['registrationReason'] }"

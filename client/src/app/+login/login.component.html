@@ -1,5 +1,5 @@
 <div class="margin-content">
-  <h1 class="title-page" i18n>Login on {{ instanceName }}</h1>
+  <h1 class="title-page" i18n>Log in to {{ instanceName }}</h1>
 
   @if (externalAuthError) {
     <my-alert type="danger" i18n>
@@ -94,7 +94,7 @@
           @if (!otpStep) {
             <div class="additional-links d-flex justify-content-center mt-4 mb-5 text-center">
               <button type="button" i18n class="button-unstyle link-primary mx-3" (click)="openForgotPasswordModal()" i18n-title title="Click here to reset your password">
-                I forgot my password
+                Recover lost password
               </button>
 
               @if (signupAllowed) {
@@ -135,7 +135,7 @@
 
 <ng-template #forgotPasswordModal>
   <div class="modal-header">
-    <h4 i18n class="modal-title">Forgot your password</h4>
+    <h4 i18n class="modal-title">Recover lost password</h4>
 
     <button type="button" class="border-0 p-0" title="Close this modal" i18n-title (click)="hideForgotPasswordModal()">
       <my-global-icon iconName="cross"></my-global-icon>
@@ -152,7 +152,7 @@
 
     @if (!isEmailDisabled()) {
       <div class="mb-4" i18n>
-        Enter your email address and we will send you a link to reset your password.
+        Enter your email address, you will then be sent a password reset link.
       </div>
     }
 

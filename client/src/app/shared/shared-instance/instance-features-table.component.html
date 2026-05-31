@@ -2,7 +2,7 @@
   <div class="feature-table">
     @if (serverConfig()) {
       <table>
-        <caption i18n>Features found on this instance</caption>
+        <caption i18n>Features implemented on this instance</caption>
 
         <tr>
           <th i18n class="t-label" scope="row">PeerTube version</th>
@@ -12,7 +12,7 @@
         <tr>
           <th class="t-label" scope="row">
             <div i18n>Default sensitive content policy</div>
-            <span i18n class="fs-7 fw-normal fst-italic">can be redefined by the users</span>
+            <span i18n class="fs-7 fw-normal fst-italic">User-configurable</span>
           </th>
           <td class="value">{{ buildNSFWLabel() }}</td>
         </tr>
@@ -153,7 +153,7 @@
         </tr>
 
         <tr>
-          <th i18n class="t-sub-label" scope="row">Users can resolve distant content</th>
+          <th i18n class="t-sub-label" scope="row">Searches can look across the PeerTube network</th>
           <td>
             <my-feature-boolean [value]="serverConfig().search.remoteUri.users"></my-feature-boolean>
           </td>

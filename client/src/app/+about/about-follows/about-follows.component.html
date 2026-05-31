@@ -6,7 +6,7 @@
         <h3 i18n>{{ subscriptionsPagination.totalItems }} {subscriptionsPagination.totalItems, plural, =1 {subscription} other {subscriptions}}</h3>
 
         <div i18n class="text-content">
-          This is content to which we have subscribed. This allows us to display their videos directly on {{ instanceName }}.
+          We are subscribed to the platforms below, meaning their videos list and play back directly on {{ instanceName }}.
         </div>
       </div>
 
@@ -37,7 +37,7 @@
 
     @if (serverStats) {
       <div class="stats mt-4">
-        <h4 i18n>Our network in figures</h4>
+        <h4 i18n>Network statistics</h4>
 
         <div myPluginSelector pluginSelectorId="about-instance-network-statistics">
           <div class="stat">
@@ -62,7 +62,7 @@
         <h3 i18n>{{ followersPagination.totalItems }} {followersPagination.totalItems, plural, =1 {follower} other {followers}}</h3>
 
         <div i18n class="text-content">
-          Our subscribers automatically display videos of {{ instanceName }} on their platforms.
+          Our subscribers automatically list content from {{ instanceName }} on their platforms.
         </div>
       </div>
 

@@ -86,9 +86,9 @@
 
               <div class="skip-step">
                 <button class="link-primary button-unstyle" (click)="skipChannelCreation()">
-                  <strong i18n>I don't want to create a channel</strong>
+                  <strong i18n>I don't want to create a channel now</strong>
                 </button>
-                <div class="skip-step-description" i18n>You will be able to create a channel later</div>
+                <div class="skip-step-description" i18n>You can always create a channel later, as well</div>
               </div>
 
               <button class="peertube-button-big primary-button" cdkStepperNext [disabled]="!formStepChannel || !formStepChannel.valid || hasSameChannelAndAccountNames()" (click)="signup()">

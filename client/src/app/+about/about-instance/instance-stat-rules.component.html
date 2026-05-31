@@ -1,7 +1,7 @@
 <div class="root">
 
   <div class="stats-block">
-    <h4 i18n>Our platform in figures</h4>
+    <h4 i18n>Platform statistics</h4>
 
     <div class="blocks" myPluginSelector pluginSelectorId="about-instance-statistics">
       <div class="stat">
@@ -49,7 +49,7 @@
   </div>
 
   <div class="usage-rules-block">
-    <h4 i18n>Usage rules</h4>
+    <h4 i18n>What you need to know</h4>
 
     <div class="blocks">
 
@@ -62,7 +62,7 @@
             </div>
           </div>
           <div>
-            <strong i18n>This platform has been created in {{ config().instance.serverCountry }}</strong>
+            <strong i18n>This platform is hosted in the {{ config().instance.serverCountry }}</strong>
             <div class="rule-content">
               <ng-container i18n>Your content (comments, videos...) must comply with the legislation in force in this country.</ng-container>
               @if (aboutHTML().codeOfConduct) {
@@ -91,12 +91,12 @@
         <div>
           @if (config().signup.allowed && config().signup.allowedForCurrentIP) {
             @if (config().signup.requiresApproval) {
-              <strong i18n>You can <a routerLink="/signup">request an account</a> on our platform</strong>
+              <strong i18n>Accounts are currently granted by <a routerLink="/signup">email request</a></strong>
 
               @if (stats().averageRegistrationRequestResponseTimeMs) {
                 <div class="rule-content" i18n>Our moderator will validate it within a {{ stats().averageRegistrationRequestResponseTimeMs | myDaysDurationFormatter }}.</div>
               } @else {
-                <div class="rule-content" i18n>Our moderator will validate it within a few days.</div>
+                <div class="rule-content" i18n>Account requests are answered as quickly as possible</div>
               }
             } @else {
               <strong i18n>You can <a routerLink="/signup">create an account</a> on our platform</strong>
@@ -116,8 +116,8 @@
             </div>
           </div>
           <div>
-            <strong i18n>This platform is compatible with Mastodon, Lemmy, Misskey and other services from the Fediverse</strong>
-            <div class="rule-content" i18n>You can use these services to interact with our videos</div>
+            <strong i18n>This platform is compatible with Mastodon, Lemmy, Misskey and other services in the Fediverse</strong>
+            <div class="rule-content" i18n>You can use these services to interact with our content</div>
           </div>
         </div>
       }

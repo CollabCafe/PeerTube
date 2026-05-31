@@ -15,7 +15,7 @@ export default [
     canActivate: [ LoginGuard ],
     data: {
       meta: {
-        title: $localize`Remote interaction`
+        title: $localize`Social media account`
       }
     }
   }
