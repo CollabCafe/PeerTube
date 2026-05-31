@@ -25,7 +25,7 @@ export default [
     ],
     data: {
       meta: {
-        title: $localize`Homepage`
+        title: $localize`Featured`
       },
       reuse: {
         enabled: true,

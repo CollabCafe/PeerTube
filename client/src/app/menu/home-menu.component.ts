@@ -32,7 +32,7 @@ export class HomeMenuComponent implements OnInit, OnDestroy {
     this.menuEntries = []
 
     if (config.homepage.enabled) {
-      this.menuEntries.push({ label: $localize`Home`, routerLink: '/home' })
+      this.menuEntries.push({ label: $localize`Featured`, routerLink: '/home' })
     }
 
     this.menuEntries.push({ label: $localize`Discover`, routerLink: '/videos/overview' })
