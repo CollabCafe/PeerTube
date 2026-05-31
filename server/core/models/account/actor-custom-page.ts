@@ -56,7 +56,8 @@ export class ActorCustomPageModel extends SequelizeModel<ActorCustomPageModel> {
 
     return ActorCustomPageModel.findOne({
       where: {
-        actorId: serverActor.id
+        actorId: serverActor.id,
+        type: 'homepage'
       }
     })
   }
