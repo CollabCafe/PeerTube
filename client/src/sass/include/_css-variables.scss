@@ -107,37 +107,98 @@
 
   // ---------------------------------------------------------------------------
 
-  // Light theme
+  // Dalek Zone light theme, replacing PeerTube's default Light Beige palette
   &[data-pt-theme="peertube-core-light-beige"],
   &[data-pt-theme="default"] {
     --is-dark: 0;
 
-    --primary: #FF8F37;
-    --border-primary: #{pvar(--primary-650)};
+    // Core palette
+    --primary: #24546f;
+    --on-primary: #ffffff;
+    --border-primary: #24546f;
 
-    --fg: hsl(0 14% 2%);
-    --fg-200: hsl(0 14% 29%);
+    --fg: #050b10;
+    --fg-500: #050b10;
+    --fg-450: #0b1822;
+    --fg-400: #162936;
+    --fg-350: #223442;
+    --fg-300: #304657;
+    --fg-250: #40586a;
+    --fg-200: #526b7d;
+    --fg-150: #758795;
+    --fg-100: #9aa8b3;
+    --fg-50: #b8c4cc;
 
-    --bg: hsl(250 5% 96%);
-    --bg-secondary: hsl(0 12% 72%);
-    --bg-secondary-500: hsl(0 12% 72%);
-    --bg-secondary-450: hsl(0 13% 81%);
-    --bg-secondary-400: hsl(0 19% 89%);
-    --bg-secondary-350: hsl(0 13% 92%);
+    --bg: #f3f7fa;
+    --bg-secondary: #e6eef4;
+    --bg-secondary-600: #b7cbd8;
+    --bg-secondary-550: #c5d6e1;
+    --bg-secondary-500: #d2e0ea;
+    --bg-secondary-450: #dbe7ef;
+    --bg-secondary-400: #e6eef4;
+    --bg-secondary-350: #edf4f8;
+    --bg-secondary-300: #f3f7fa;
+    --bg-secondary-250: #f7fafc;
+    --bg-secondary-200: #ffffff;
 
-    --menu-bg-600: hsl(0 12% 72%);
-    --menu-bg-550: hsl(0 13% 81%);
-    --menu-bg: hsl(0 19% 89%);
+    // Header/menu
+    --header-bg: #f3f7fa;
+    --header-fg: #071018;
 
-    --secondary-icon-color: hsl(0, 9%, 51%);
-    --input-placeholder-color: hsl(0, 9%, 51%);
+    --menu-bg-600: #b7cbd8;
+    --menu-bg-550: #c5d6e1;
+    --menu-bg-500: #d2e0ea;
+    --menu-bg-450: #dbe7ef;
+    --menu-bg-400: #e6eef4;
+    --menu-bg-350: #edf4f8;
+    --menu-bg-300: #f3f7fa;
+    --menu-bg: #e6eef4;
 
-    --input-check-active-fg: #{pvar(--bg)};
-    --input-check-active-bg: #{pvar(--fg-250)};
+    --menu-fg: #071018;
+    --menu-fg-600: #071018;
+    --menu-fg-550: #101d27;
+    --menu-fg-500: #1d2e3a;
+    --menu-fg-450: #293b47;
+    --menu-fg-400: #344654;
+    --menu-fg-350: #445765;
+    --menu-fg-300: #566a78;
+    --menu-fg-250: #758795;
+    --menu-fg-200: #9aa8b3;
+    --menu-fg-150: #b8c4cc;
+    --menu-fg-100: #cbd5dc;
+    --menu-fg-50: #e6eef4;
 
-    --alert-primary-fg: #{pvar(--on-primary-200)};
-    --alert-primary-bg: #{pvar(--primary-200)};
-    --alert-primary-border-color: #{pvar(--primary-300)};
+    // Inputs
+    --input-fg: #071018;
+    --input-bg: #ffffff;
+    --input-bg-550: #edf4f8;
+    --input-bg-600: #e6eef4;
+    --input-bg-in-secondary: #ffffff;
+    --input-bg-in-modal: #ffffff;
+    --input-border-color: #7b8f9d;
+    --input-placeholder-color: #40586a;
+
+    --textarea-fg: #071018;
+    --textarea-bg: #ffffff;
+    --textarea-bg-in-secondary: #ffffff;
+    --textarea-bg-in-modal: #ffffff;
+
+    --input-check-active-fg: #ffffff;
+    --input-check-active-bg: #24546f;
+
+    // Icons and active states
+    --secondary-icon-color: #223442;
+    --active-icon-color: #ffffff;
+    --active-icon-bg: #24546f;
+
+    // Alerts
+    --alert-primary-fg: #071018;
+    --alert-primary-bg: #dbe7ef;
+    --alert-primary-border-color: #7b8f9d;
+
+    // Player overlay secondary
+    --pt-player-overlay-secondary-fg: #071018;
+    --pt-player-overlay-secondary-bg: #e6eef4;
   }
 
   // Brown

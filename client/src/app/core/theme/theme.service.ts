@@ -49,7 +49,7 @@ export class ThemeService {
 
   getDefaultThemeItem () {
     return {
-      label: $localize`Light (Beige) or Dark (Brown)`,
+      label: $localize`Dalek Zone Light or Dalek Zone Dark`,
       id: 'default',
       description: $localize`PeerTube selects the appropriate theme depending on web browser preferences`
     }
@@ -59,11 +59,11 @@ export class ThemeService {
     return [
       ...this.serverConfig.theme.builtIn.map(t => {
         if (t.name === 'peertube-core-dark-brown') {
-          return { id: t.name, label: $localize`Dark (Brown)` }
+          return { id: t.name, label: $localize`Dalek Zone Dark` }
         }
 
         if (t.name === 'peertube-core-light-beige') {
-          return { id: t.name, label: $localize`Light (Beige)` }
+          return { id: t.name, label: $localize`Dalek Zone Light` }
         }
 
         return { id: t.name, label: capitalizeFirstLetter(t.name) }

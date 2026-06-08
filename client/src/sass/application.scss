@@ -114,9 +114,22 @@ a {
   color: inherit;
 }
 
+:root[data-pt-theme="peertube-core-light-beige"],
+:root[data-pt-theme="default"] {
+  a.pt,
+  .margin-content a:not(.primary-button):not(.secondary-button):not(.grey-button):not(.dropdown-item):not(.nav-link):not([class*="button"]) {
+    color: #16445d;
+  }
+
+  a.pt:hover,
+  .margin-content a:not(.primary-button):not(.secondary-button):not(.grey-button):not(.dropdown-item):not(.nav-link):not([class*="button"]):hover {
+    color: #0b2d40;
+  }
+}
+
 my-link:hover,
 a:hover {
-  opacity: 0.8;
+  opacity: 0.88;
 }
 
 a.dropdown-item,
