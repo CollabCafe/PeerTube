@@ -1,3 +1,4 @@
+
 @use "sass:math";
 @use "sass:color";
 @use "_variables" as *;
@@ -11,6 +12,53 @@
 @use "./class-helpers/index.scss";
 @use "_css-variables" as *;
 @use "./primeng";
+
+/* 404 Again: local Orbitron font stack */
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../assets/fonts/orbitron/Orbitron-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../assets/fonts/orbitron/Orbitron-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../assets/fonts/orbitron/Orbitron-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../assets/fonts/orbitron/Orbitron-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: 70%;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: 'Orbitron', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+}
+
 
 @mixin main-col-expanded {
   --menu-width: #{$menu-collapsed-width};
